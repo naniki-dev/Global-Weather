@@ -15,9 +15,10 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
+        <form id="search-form">
           <input
             class="search-input"
+            id="search-input"
             type="search"
             autofocus="on"
             placeholder="Enter a city..."
@@ -29,16 +30,16 @@
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city">Pretoria</h1>
+            <h1 class="current-city" id="current-city">Pretoria</h1>
             <p class="current-details">
-              Saturday 15:32 Moderate rain <br />
+              <span id="current-date"></span> Moderate Rain <br />
               Humidity: <strong>87%</strong> Wind: <strong>7.2km/h</strong>
             </p>
           </div>
-          <div class="current-temp">
-            <span class="current-temp-icon">☀️</span
-            ><span class="current-temp-value">24</span
-            ><span class="current-temp-unit">°C</span>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value">24</span
+            ><span class="current-temperature-unit">°C</span>
           </div>
         </div>
       </main>
