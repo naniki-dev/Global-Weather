@@ -3,10 +3,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* a {
-  color: ;
-} */
-
 .current-temperature-value {
   font-size: 80px;
   font-weight: bold;
@@ -19,15 +15,18 @@ body {
 }
 
 .current-temperature-icon {
-  position: relative;
-  top: -8px;
-  font-size: 40px;
-  margin-right: 10px;
+  width: 88px;
+  height: 88px;
+
 }
 
 .current-temperature {
+  display: flex;
+  align-items: center;
   color: #3d3d4e;
-  font-size: 48px;
+  font-size: 88px;
+  font-weight: bold;
+  line-height: 88px;
 }
 
 .current-weather {
