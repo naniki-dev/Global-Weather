@@ -45,6 +45,7 @@ body {
 }
 
 .search-button {
+  cursor: pointer;
   margin-left: 5px;
   font-size: 16px;
   background-color: #4a4a6a;
