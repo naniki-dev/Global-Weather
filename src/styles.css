@@ -1,16 +1,20 @@
 body {
-  background: #f9f7fe;
-  font-family: "Roboto", sans-serif;
+  /* background: #f9f7fe; */
+  font-family: "Space Grotesk";
+  /* background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%); */
+  background: linear-gradient(to bottom, #dce8f5, #f0f4f8);
 }
 
 .current-temperature-value {
   font-size: 80px;
-  font-weight: bold;
+  font-weight: 900;
+  color: #3d3d4e;
 }
 
 .current-temperature-unit {
   font-size: 28px;
   position: relative;
+  color: #3d3d4e;
   top: -38px;
 }
 
@@ -23,7 +27,8 @@ body {
 .current-temperature {
   display: flex;
   align-items: center;
-  color: #3d3d4e;
+  color: #111820;
+  /* color: #3d3d4e; */
   font-size: 88px;
   font-weight: bold;
   line-height: 88px;
@@ -48,10 +53,9 @@ body {
   cursor: pointer;
   margin-left: 5px;
   font-size: 16px;
-  background-color: #4a4a6a;
-  /* background-color: #885df1; */
-  color: #e8e4f8;
-  /* color: white; */
+  background-color: #8faec7 ;
+  /* color: #e8e4f8; */
+  color: white;
   border: none;
   padding: 20px;
   line-height: 1;
@@ -59,7 +63,9 @@ body {
 }
 
 .weather-app {
-  background: white;
+  /* background: white; */
+  /* background-color: rgba(255, 255, 255, 0.85); */
+  background: linear-gradient(135deg, #ffffff 0%, #e8f2fb 60%, #cee0f0 100%);
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
@@ -110,6 +116,7 @@ main {
 
 .weather-forecast-date {
   text-align: center;
+  font-weight: bold;
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
   line-height: 20px;
@@ -124,7 +131,7 @@ main {
 }
 .weather-forecast-temperatures {
   text-align: center;
-  color: #f65282;
+  color: #3d3d4e;;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -133,3 +140,5 @@ main {
 .weather-forecast-temperature {
   padding: 0 4px;
 }
+
+
