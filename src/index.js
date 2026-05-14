@@ -46,13 +46,25 @@ function formatDate(date) {
 function searchCity(city) {
   let apiKey = "e6013302dc471o4949fb0aet3fd8eff8";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayTemperature);
+  axios.get(apiUrl).then(displayTemperature)
+  .catch(function(error) {
+  let errorElement = document.querySelector("#search-error");
+  errorElement.innerHTML = "City not found. Please check the spelling and try again.";
+  });
 }
 
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
+  let errorElement = document.querySelector("#search-error");
 
+  let lettersAndSpacesOnly = /^[A-Za-z\s]+$/;
+  if (!lettersAndSpacesOnly.test(searchInput.value)) {
+    errorElement.innerHTML = "Please enter a valid city name.";
+    return;
+  }
+
+  errorElement.innerHTML = "";
   searchCity(searchInput.value);
 }
 
